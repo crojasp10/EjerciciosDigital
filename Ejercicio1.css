@@ -1,0 +1,255 @@
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+body main{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgb(19, 18, 17);
+
+}
+
+.primaryHeader{
+    justify-content: space-between;
+    display: flex;
+    padding:10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(118, 118, 223);
+}
+
+ .primaryHeader img{
+    width:80px;
+    border-radius: 50%;
+}
+
+ .primaryHeader ul{
+    display:flex;
+    
+}
+
+ .primaryHeader ul li{
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+body main{
+    background-color: black;
+    padding-bottom: 20px;
+    /*Ver las otras modificaciones en mediaQueries*/
+}
+ main .card {
+    display:flex;
+    background-color: rgb(248, 248, 246);
+    flex-direction: column;
+    width:250px;
+    height: 70%;
+    position:relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left:20px;
+    
+    
+}
+
+ main .card img{
+    width: 100%;
+    height: 50%; 
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+}
+
+ main .card .batman{
+    width:20%;
+    height:20%;
+    border-radius: 50%;
+    position: absolute;
+    top:25%;
+    left:40%;
+    right:40%;
+}
+
+main .card .card-text{
+    height:60%;
+}
+
+ main .card .card-text .date{
+    margin-top:22%;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    
+}
+
+main .card .card-text h2{
+    margin:0;
+    text-align: center;
+}
+
+body main .card .card-text p{
+    margin:0;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+ main .card .card-stats
+{
+    background-color: rgb(202, 118, 49);
+    height: 15%;
+}
+ main .card .card-stats ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left:0;
+    padding:5px;
+    margin:0;
+    align-items: center;
+}
+
+ main .card .card-stats ul img{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+main .card .card-stats ul li{
+    font-size: 20px;
+}
+/*Creo un div para insertarle una lista, a esa
+lista le aplicao space around para que se centre,
+a la lista tm le aplico flex y a su elementos tm
+space around*/
+footer div{
+    background-color: blueviolet;
+    padding-top:5%;
+    height:30px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+footer div ul{
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+    padding:0;
+    width:300px;
+    
+}
+
+footer div ul li{
+    list-style-type: none;
+    font-size: 16px;
+    
+    
+    
+    
+}
+/*MediaQueries*/
+
+/*De aquí hacia abajo*/
+@media (max-width:600px){
+    
+    .primaryHeader{
+        height:10%;
+        padding-bottom: 20px;
+    }
+    .primaryHeader ul li a{
+        font-size: 14px;
+    }
+
+
+    .primaryHeader img{
+        width:20%;
+    }
+
+    .primaryHeader ul li{
+        font-size:24px;
+    }
+
+
+    body main{
+        
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        background-color: brown;
+        height: 100vh; 
+    }
+    main .card{
+        display:flex;
+        background-color: rgb(248, 248, 246);
+        flex-direction: column;
+        width:120px;
+        height: 180px;
+        position:relative;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin-top:20px;
+        margin-left:0;
+       
+    }
+    main .card .batman{
+        position: absolute;
+        top:15%;
+        
+    }
+
+    main .card .card-text .date{
+        font-size: 10px;
+        margin-top:12%;
+    }
+
+    main .card .card-text h2{
+        font-size: 14px;
+        margin:0;
+
+    }
+
+    body main .card .card-text p{
+        font-size: 8px;
+        color:black;
+    }
+
+    main .card .card-stats ul li {
+        font-size: 14px;
+    }
+
+    main .card .card-stats ul li img{
+        width:14px;
+    }
+   footer div{
+       
+       display:flex;
+       margin:0;
+       padding:0;
+       
+   }
+
+   footer div ul{
+       
+       margin:0;
+       justify-content: space-around;
+       align-items: center;
+   }
+    footer div ul li{
+        font-size: 12px;
+    }
+    
+}
+/*De aquí hacia arriba*/
+@media (min-width:760px){
+   
+
+}
+
